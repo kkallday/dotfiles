@@ -1,3 +1,17 @@
+set nocompatible
+filetype off
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'fatih/vim-go'
+call vundle#end()
+
+filetype plugin indent on
+
 " set max width to 120
 set textwidth=120
 
@@ -6,10 +20,6 @@ set nowrap
 
 " set line numbers
 set number
-
-" set spacing and indent
-"set tabstop=2 shiftwidth=2 expandtab
-"set ts=2
 
 " set max width for markdown files
 au BufRead,BufNewFile *.md setlocal textwidth=80
