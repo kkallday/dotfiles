@@ -1,0 +1,8 @@
+[include]
+	path = ~/.gitconfig.user
+
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
